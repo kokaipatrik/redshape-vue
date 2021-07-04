@@ -1,0 +1,68 @@
+{
+  "name": "redshape",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Patrik Kókai",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve:hu": "env VUE_APP_LANG=hu vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:hu": "env VUE_APP_LANG=hu vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-scroll-lock": "^3.1.5",
+    "chart.js": "2.9.4",
+    "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
+    "jwt-decode": "^2.2.0",
+    "moment": "^2.29.1",
+    "register-service-worker": "^1.7.1",
+    "serve": "^11.3.2",
+    "v-calendar": "^1.0.8",
+    "v-click-outside": "^3.1.2",
+    "vue": "^2.6.11",
+    "vue-axios": "^2.1.5",
+    "vue-html2pdf": "^1.8.0",
+    "vue-i18n": "^8.21.0",
+    "vue-router": "^3.4.7",
+    "vue2-datepicker": "^3.7.0",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "html-loader": "^0.5.5",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.1.0",
+    "serviceworker-webpack-plugin": "^1.0.1",
+    "vue-loader": "^15.9.3",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

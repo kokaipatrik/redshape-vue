@@ -1,0 +1,46 @@
+@import '~@scss/vars/grid';
+
+.block.block--meals,
+.block.block--general,
+.block.block--values-list {
+  margin-bottom: 35px;
+
+  > .block__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    color: var(--light-gray-2);
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--dark-gray-3);
+
+    .hba1c {
+      color: var(--medium-gray);
+      font-size: 12px;
+    }
+  }
+
+  > .block__content {
+    display: block;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    overflow: auto;
+    white-space: nowrap;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .block.block--meals,
+  .block.block--general,
+  .block.block--values-list {
+    .block__title {
+      font-size: 18px;
+    }
+  }
+}

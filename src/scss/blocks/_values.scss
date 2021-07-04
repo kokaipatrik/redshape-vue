@@ -1,0 +1,41 @@
+.values {
+  display: flex;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--light-grey-4);
+  font-size: 11px;
+  font-weight: 700;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.low {
+    color: white;
+    background: var(--low);
+  }
+
+  &.normal {
+    color: white;
+    background: var(--normal);
+  }
+
+  &.high {
+    color: white;
+    background: var(--high);
+  }
+
+  &.danger {
+    color: white;
+    background: var(--high);
+  }
+}

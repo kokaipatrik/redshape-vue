@@ -1,0 +1,73 @@
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  background: var(--dark-gray);
+  border: 1px solid var(--dark-gray-3);
+  border-radius: 16px;
+  box-sizing: border-box;
+  box-shadow: 0;
+  outline: 0;
+
+  &::placeholder {
+    color: var(--medium-gray);
+    font-weight: 500;
+  }
+}
+
+.btn.btn--primary {
+  width: 100%;
+  padding: 12px 16px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--coral-pink);
+  border: 0;
+  border-radius: 16px;
+  box-sizing: border-box;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn.btn--secondary {
+  @extend .btn--primary;
+
+  width: 100%;
+  background: var(--dark-gray);
+  border: 1px solid var(--dark-gray-3);
+}
+
+.btn.btn--pdf {
+  position: relative;
+  width: 130px;
+  padding: 12px 8px 12px 24px;
+  color: var(--medium-gray-2);
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--dark-gray);
+  border: 1px solid var(--dark-gray-3);
+  border-radius: 16px;
+  box-sizing: border-box;
+  outline: 0;
+  cursor: pointer;
+  transition: .2s;
+
+  &:active {
+    transform: scale(.975);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    width: 10px;
+    height: 15px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 10 15' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Ebasic / download%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-14 -14)' fill='%23888'%3E%3Cpath d='m18.286 22.693-2.5643-2.5571-1.0071 1.0071 4.2857 4.2857 4.2857-4.2857-1.0071-1.0071-2.5643 2.5571 1.4e-6 -8.6929h-1.4286l-1e-6 8.6929zm5.7143 4.1643v1.4286h-10v-1.4286h10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    transform: translateY(-50%);
+  }
+}

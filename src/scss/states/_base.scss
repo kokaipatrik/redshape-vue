@@ -1,0 +1,15 @@
+.state {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: calc(env(safe-area-inset-bottom) + 85px);
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 44px;
+  border-radius: 14px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 6;
+}

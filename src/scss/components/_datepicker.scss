@@ -1,0 +1,29 @@
+.datetime-select {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 10px);
+}
+
+.vc-container.vc-is-dark {
+  background-color: var(--dark-gray);
+  border-color: var(--dark-gray-3);
+  border-radius: 16px;
+  font-family: "Montserrat", sans-serif;
+
+  .vc-header {
+    padding-bottom: 10px;
+  }
+
+  .vc-arrows-container {
+    padding: 5px 10px;
+  }
+
+  .vc-title {
+    font-size: 14px;
+    transition: .2s;
+  }
+
+  .vc-weekday {
+    color: var(--medium-gray);
+  }
+}
